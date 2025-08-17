@@ -25,8 +25,4 @@ Thumbs.db
 # Registry files (optional, since they’re Windows-only)
 *.reg
 
-# FFmpeg binaries (too large for GitHub, recommend ignoring)
-clicon/ffmpeg/ffmpeg.exe
-clicon/ffmpeg/ffprobe.exe
-
 tests/
