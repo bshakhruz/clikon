@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+.eggs/
+*.log
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# PyInstaller / Build
+build/
+dist/
+*.spec
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Registry files (optional, since they’re Windows-only)
+*.reg
+
+# FFmpeg binaries (too large for GitHub, recommend ignoring)
+clicon/ffmpeg/ffmpeg.exe
+clicon/ffmpeg/ffprobe.exe
+
+tests/
