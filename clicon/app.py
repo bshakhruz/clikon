@@ -38,6 +38,8 @@ def register_context_menu():
     try:
         key = winreg.CreateKey(winreg.HKEY_CLASSES_ROOT, key_path)
         winreg.SetValue(key, '', winreg.REG_SZ, "Convert To")
+        winreg.SetValueEx(key, "Icon", 0, winreg.REG_SZ, exe_path)  # <-- set icon here
+
         cmd_key = winreg.CreateKey(key, "command")
         winreg.SetValue(cmd_key, '', winreg.REG_SZ, f'"{exe_path}" "%1"')
     except PermissionError:
